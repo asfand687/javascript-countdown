@@ -1,7 +1,9 @@
 const countdown = () => {
-	const countDate = new Date('Apr 26, 2021 00:00:00').getTime()
+	const countDate = new Date('Sept 26, 2021 00:00:00').getTime()
 	const now = new Date().getTime()
-	const gap = now - countDate
+	const gap = countDate - now
+
+	console.log(`now: ${now}, countdate: ${countDate}, gap: ${gap}`)
 
 	const second = 1000
 	const minute = second * 60
